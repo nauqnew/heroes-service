@@ -12,18 +12,18 @@ func main() {
 	// Definition of the Fabric SDK properties
 	fSetup := blockchain.FabricSetup{
 		// Network parameters
-		OrdererID: "orderer.hf.chainhero.io",
+		OrdererID: "orderer0.orgorderer.com",
 
 		// Channel parameters
-		ChannelID:     "chainhero",
-		ChannelConfig: os.Getenv("GOPATH") + "/src/github.com/chainHero/heroes-service/fixtures/artifacts/chainhero.channel.tx",
+		ChannelID:     "abschannel04",
+		ChannelConfig: os.Getenv("GOPATH") + "/src/github.com/nauqnew/heroes-service/fixtures/artifacts/channel04.tx",
 
 		// Chaincode parameters
 		ChainCodeID:     "heroes-service",
 		ChaincodeGoPath: os.Getenv("GOPATH"),
-		ChaincodePath:   "github.com/chainHero/heroes-service/chaincode/",
+		ChaincodePath:   "github.com/nauqnew/heroes-service/chaincode/",
 		OrgAdmin:        "Admin",
-		OrgName:         "org1",
+		OrgName:         "orga",
 		ConfigFile:      "config.yaml",
 
 		// User parameters
